@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function getQueryString(name) {
+            var url = location.href; //获取url中"?"符后的字串
+            var theRequest = new Object();
+            if (url.indexOf("?") != -1) {
+                var str = url.split("?")[1];
+                console.log(str);
+                var strs = str.split("&");
+                for (var i = 0; i < strs.length; i++) {
+                    theRequest[strs[i].split("=")[0]] = unescape(strs[i].split("=")[1]);
+                }
+            }
+            return theRequest[name];
+        }
+        var code = getQueryString('code');
+        var fac = getQueryString('fac');
+        if (code && fac) {
+            window.location.href = '/page/common/index.html#/' + fac + '?code=' + code;
+        }else{
+            alert('请跳转正确的入口');
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

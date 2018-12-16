@@ -1,0 +1,33 @@
+{
+  "name": "CustomProject",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bootstrap": "^3.3.7",
+    "bootstrap-table": "^1.9.1",
+    "bootstrap-validator": "^0.11.9",
+    "jquery": "^3.3.1",
+    "layui-src": "^2.4.5",
+    "moment": "^2.22.2",
+    "vue": "^2.5.17",
+    "vue-layer": "^0.9.10",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1",
+    "vuex-persist": "^2.0.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.1.1",
+    "@vue/cli-plugin-eslint": "^3.1.5",
+    "@vue/cli-service": "^3.1.4",
+    "mockjs": "^1.0.1-beta3",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.1",
+    "vue-template-compiler": "^2.5.17"
+  }
+}
